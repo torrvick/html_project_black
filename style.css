@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #020A18;
+}
+
+.center {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__link {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 39px 16px;
+}
+
+.nav__link:hover {
+    color: #3A6888;
+}
+
+.header {
+    margin-bottom: 160px;
+}

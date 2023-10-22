@@ -52,6 +52,10 @@
     justify-content: center;
 }
 
+.img__block {
+    display: block;
+}
+
 .main__left {
     width: 57%;
     display: flex;

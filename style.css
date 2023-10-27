@@ -17,8 +17,8 @@
     margin: 0 auto; */
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
-    
-    
+
+
 }
 
 .nav {
@@ -49,11 +49,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 128px; */
-
-    /* display: flex;
-    justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 .flex__vertical {
@@ -73,7 +68,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
 }
 
 .main__left .subtitle {
@@ -110,8 +104,10 @@
 }
 
 .main__buttons {
-    max-height: 57px;
+    /* max-height: 57px; */
+    gap: 20px;
 }
+
 .main__link {
     border-radius: 5px;
     background: var(--3-a-68-b-8, #3A68B8);
@@ -122,15 +118,15 @@
     font-weight: 600;
     line-height: normal;
     padding: 1rem 2rem;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .icon {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .main .content {
-    gap:128px;
+    gap: 128px;
     margin-bottom: 197px;
 }
 
@@ -142,7 +138,6 @@
     background-color: #020A18;
     padding-top: 157px;
     padding-bottom: 221px;
-    
 }
 
 .top__content {
@@ -169,13 +164,13 @@
     opacity: 0.7;
     margin-bottom: 50px;
     width: 90%;
-    
+
 }
 
 .submain .submain__right {
     /* width: 43%; */
     width: 484px;
-    
+
 }
 
 .top__content {
@@ -206,31 +201,10 @@
     padding-bottom: 30px;
 }
 
-/* .cell__1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.cell__2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.cell__3 {
-    grid-area: 1 / 3 / 2 / 4;
-} */
-
 .cell__big {
-    /* grid-area: 2 / 1 / 4 / 3; */
     grid-column: span 2;
     grid-row: span 2;
 }
-
-/* .cell__5 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.cell__6 {
-    grid-area: 3 / 3 / 4 / 4;
-} */
 
 .cell__title {
     color: var(--ffffff, #FFF);
@@ -348,7 +322,24 @@
     margin-right: 25px;
 }
 
-@media (min-width: 594px) and (max-width: 1145px) {
+@media (min-width: 1024px) and (max-width: 1145px) {
+    .cells {
+        padding: 10px;
+    }
+
+    .grid {
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+
+    .logo {
+        max-width: 550px;
+        margin: auto;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .center {
         padding-left: calc(50% - 376px);
         padding-right: calc(50% - 376px);
@@ -385,7 +376,7 @@
     .cell__big .cell__title {
         padding-bottom: 30px;
     }
-    
+
     .cell__big .cell__pic {
         padding-bottom: 30px;
         width: 98px;
@@ -398,4 +389,135 @@
     .footer__left, .footer__center, .footer__right {
         min-width: 47%;
     }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
+        margin: auto;
+        min-width: 362px;
+    }
+
+    .main__left {
+        align-items: center;
+    }
+
+    .main__buttons {
+        gap: 24px;
+    }
+
+    .nav__link {
+        font-size: 14px;
+        padding: 22.5px 8px;
+    }
+
+    .header {
+        margin-bottom: 64px;
+    }
+
+    .main__left .title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .main__left .subtitle {
+        font-size: 14px;
+    }
+
+    .main__left .info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 356px;
+        margin: auto;
+        gap: 32px;
+    }
+
+    .main .content {
+        margin-bottom: 128px;
+    }
+
+    .submain {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .top__content {
+        text-align: center;
+    }
+
+    .img__block {
+        max-width: 343px;
+    }
+
+    .submain__right {
+        align-items: center;
+
+    }
+
+    .submain__right .title {
+        font-size: 24px;
+    }
+
+    .submain .submain__right {
+        width: 343px;
+    }
+
+    .submain__right .info {
+        width: 100%;
+    }
+
+    .top__content {
+        margin-bottom: 96px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 362px);
+    }
+
+    .cell__big {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .cell__big .cell__title {
+        padding-bottom: 30px;
+    }
+
+    .cell__big .cell__pic {
+        padding-bottom: 30px;
+        width: 98px;
+    }
+
+    .middle__content {
+        margin-bottom: 96px;
+    }
+
+    .bottom__content {
+        text-align: center;
+    }
+
+    .bottom__content .info {
+        width: 100%;
+    }
+
+    .bottom__content .title {
+        font-size: 24px;
+    }
+
+    .footer__left, .footer__center, .footer__right {
+        min-width: 100%;
+    }
+
+    .footer__center {
+        order: -1;
+    }
+
+    .footer .title {
+        text-align: center;
+    }
+
 }

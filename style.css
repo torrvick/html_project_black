@@ -13,8 +13,6 @@
 
 
 .center {
-    /* width: 1146px;
-    margin: 0 auto; */
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
 
@@ -104,7 +102,6 @@
 }
 
 .main__buttons {
-    /* max-height: 57px; */
     gap: 20px;
 }
 
@@ -337,6 +334,19 @@
         margin: auto;
         gap: 32px;
     }
+
+    .content, .top__content, .bottom__content {
+        flex-wrap: nowrap;
+    }
+
+    .img__block {
+        max-width: 100%;
+    }
+
+    .main__left, .submain__right, .bottom__left {
+        flex-shrink: 0;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

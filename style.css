@@ -349,9 +349,8 @@ a:visited {
     }
 
     .logo {
-        max-width: 550px;
-        margin: auto;
-        gap: 32px;
+        gap: 0px;
+        justify-content: space-between;
     }
 
     .content, .top__content, .bottom__content {
